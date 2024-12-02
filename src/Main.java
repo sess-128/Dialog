@@ -1,4 +1,4 @@
-import dialog.CharacterDialogImpl;
+import dialog.CharacterDialog;
 import dialog.Dialog;
 
 public class Main {
@@ -7,7 +7,7 @@ public class Main {
         String tittle = "Введите любой символ: ";
         String failMessage = "Ошибка ввода";
 
-        Dialog<Character> dialog = new CharacterDialogImpl(tittle, failMessage);
+        Dialog<Character> dialog = new CharacterDialog(tittle, failMessage);
         char symbol = dialog.input();
         System.out.println("ВВЕДЕН СИМВОЛ: " + symbol);
     }
